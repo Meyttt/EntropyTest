@@ -1,0 +1,1181 @@
+{
+    "text": "Рамос: \"Продолжали бороться до конца ради своих фанатов\"\n     \n25 Мая 2014, 04:16, 1031 \n\n\nРамос: \"Продолжали бороться до конца ради своих фанатов\" \nflickr. com \n\n\nОдин из героев финала Лиги чемпионов 2013-2014 Серхио Рамос после матча дал свой комментарий. \n \n \n\n\"Это самый важный гол, который я когда-либо забивал.  Это невероятное чувство.  Мы продолжали бороться до конца ради своих фанатов\", - цитирует Рамоса Sky Sports. \n\n \n\n\"Это не мой гол, а один из многочисленных голов болельщиков \"Реала\".  Фанаты и вся моя семья до последнего поддерживали нас.  \"Реал\" заслужил кубок Лиги чемпионов после стольких лет\".", 
+    "sentences": [
+        [
+            {
+                "forma": "Рамос", 
+                "dom": 2, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "РАМОС", 
+                "link": "предик", 
+                "posStart": 0, 
+                "grm": "МУЖ ИМ ОД ЕД"
+            }, 
+            {
+                "forma": ":\"", 
+                "dom": 22, 
+                "pos": "MID", 
+                "len": 2, 
+                "lemma": ":\"", 
+                "link": "1-компл", 
+                "posStart": 5, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Продолжали", 
+                "dom": -1, 
+                "pos": "V", 
+                "len": 10, 
+                "lemma": "ПРОДОЛЖАТЬ", 
+                "link": "_root", 
+                "posStart": 8, 
+                "grm": "ПРОШ ИЗЪЯВ НЕСОВ МН"
+            }, 
+            {
+                "forma": "бороться", 
+                "dom": 2, 
+                "pos": "V", 
+                "len": 8, 
+                "lemma": "БОРОТЬСЯ", 
+                "link": "1-компл", 
+                "posStart": 19, 
+                "grm": "НЕСОВ ИНФ"
+            }, 
+            {
+                "forma": "до", 
+                "dom": 3, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ДО", 
+                "link": "1-компл", 
+                "posStart": 28, 
+                "grm": ""
+            }, 
+            {
+                "forma": "конца", 
+                "dom": 4, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "КОНЕЦ", 
+                "link": "предл", 
+                "posStart": 31, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "ради", 
+                "dom": 9, 
+                "pos": "PR", 
+                "len": 4, 
+                "lemma": "РАДИ", 
+                "link": "обст", 
+                "posStart": 37, 
+                "grm": ""
+            }, 
+            {
+                "forma": "своих", 
+                "dom": 8, 
+                "pos": "A", 
+                "len": 5, 
+                "lemma": "СВОЙ", 
+                "link": "опред", 
+                "posStart": 42, 
+                "grm": "РОД МН"
+            }, 
+            {
+                "forma": "фанатов", 
+                "dom": 6, 
+                "pos": "S", 
+                "len": 7, 
+                "lemma": "ФАНАТ", 
+                "link": "предл", 
+                "posStart": 48, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 5, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "квазиагент", 
+                "posStart": 55, 
+                "grm": ""
+            }, 
+            {
+                "forma": "25", 
+                "dom": 13, 
+                "pos": "NUM", 
+                "len": 2, 
+                "lemma": "25", 
+                "link": "количест", 
+                "posStart": 63, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Мая", 
+                "dom": 10, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "МАЙ", 
+                "link": "атриб", 
+                "posStart": 66, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "2014", 
+                "dom": 13, 
+                "pos": "NUM", 
+                "len": 4, 
+                "lemma": "2014", 
+                "link": "количест", 
+                "posStart": 70, 
+                "grm": ""
+            }, 
+            {
+                "forma": ",", 
+                "dom": 15, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": ",", 
+                "link": "предик", 
+                "posStart": 74, 
+                "grm": ""
+            }, 
+            {
+                "forma": "04", 
+                "dom": 15, 
+                "pos": "NUM", 
+                "len": 2, 
+                "lemma": "04", 
+                "link": "количест", 
+                "posStart": 76, 
+                "grm": ""
+            }, 
+            {
+                "forma": ":", 
+                "dom": 2, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": ":", 
+                "link": "разъяснит", 
+                "posStart": 78, 
+                "grm": ""
+            }, 
+            {
+                "forma": "16", 
+                "dom": 17, 
+                "pos": "NUM", 
+                "len": 2, 
+                "lemma": "16", 
+                "link": "количест", 
+                "posStart": 79, 
+                "grm": ""
+            }, 
+            {
+                "forma": ",", 
+                "dom": 19, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": ",", 
+                "link": "предик", 
+                "posStart": 81, 
+                "grm": ""
+            }, 
+            {
+                "forma": "1031", 
+                "dom": 19, 
+                "pos": "NUM", 
+                "len": 4, 
+                "lemma": "1031", 
+                "link": "количест", 
+                "posStart": 83, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Рамос", 
+                "dom": 15, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "РАМОС", 
+                "link": "сент-соч", 
+                "posStart": 91, 
+                "grm": "МУЖ ИМ ОД ЕД"
+            }, 
+            {
+                "forma": ":\"", 
+                "dom": 21, 
+                "pos": "MID", 
+                "len": 2, 
+                "lemma": ":\"", 
+                "link": "предик", 
+                "posStart": 96, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Продолжали", 
+                "dom": 19, 
+                "pos": "V", 
+                "len": 10, 
+                "lemma": "ПРОДОЛЖАТЬ", 
+                "link": "сент-соч", 
+                "posStart": 99, 
+                "grm": "ПРОШ ИЗЪЯВ НЕСОВ МН"
+            }, 
+            {
+                "forma": "бороться", 
+                "dom": 21, 
+                "pos": "V", 
+                "len": 8, 
+                "lemma": "БОРОТЬСЯ", 
+                "link": "1-компл", 
+                "posStart": 110, 
+                "grm": "НЕСОВ ИНФ"
+            }, 
+            {
+                "forma": "до", 
+                "dom": 22, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ДО", 
+                "link": "2-компл", 
+                "posStart": 119, 
+                "grm": ""
+            }, 
+            {
+                "forma": "конца", 
+                "dom": 23, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "КОНЕЦ", 
+                "link": "предл", 
+                "posStart": 122, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "ради", 
+                "dom": 22, 
+                "pos": "PR", 
+                "len": 4, 
+                "lemma": "РАДИ", 
+                "link": "обст", 
+                "posStart": 128, 
+                "grm": ""
+            }, 
+            {
+                "forma": "своих", 
+                "dom": 27, 
+                "pos": "A", 
+                "len": 5, 
+                "lemma": "СВОЙ", 
+                "link": "опред", 
+                "posStart": 133, 
+                "grm": "РОД МН"
+            }, 
+            {
+                "forma": "фанатов", 
+                "dom": 25, 
+                "pos": "S", 
+                "len": 7, 
+                "lemma": "ФАНАТ", 
+                "link": "предл", 
+                "posStart": 139, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 21, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "обст", 
+                "posStart": 146, 
+                "grm": ""
+            }, 
+            {
+                "forma": "flickr", 
+                "dom": 28, 
+                "pos": "ENG", 
+                "len": 6, 
+                "lemma": "FLICKR", 
+                "link": "аппоз", 
+                "posStart": 149, 
+                "grm": ""
+            }, 
+            {
+                "forma": ".", 
+                "dom": 21, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "1-компл", 
+                "posStart": 155, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "com", 
+                "dom": 14, 
+                "pos": "ENG", 
+                "len": 3, 
+                "lemma": "COM", 
+                "link": "предик", 
+                "posStart": 157, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Один", 
+                "dom": 14, 
+                "pos": "A", 
+                "len": 4, 
+                "lemma": "ОДИН", 
+                "link": "суб-копр", 
+                "posStart": 164, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "из", 
+                "dom": 1, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ИЗ", 
+                "link": "электив", 
+                "posStart": 169, 
+                "grm": ""
+            }, 
+            {
+                "forma": "героев", 
+                "dom": 2, 
+                "pos": "S", 
+                "len": 6, 
+                "lemma": "ГЕРОЙ", 
+                "link": "предл", 
+                "posStart": 172, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "финала", 
+                "dom": 3, 
+                "pos": "S", 
+                "len": 6, 
+                "lemma": "ФИНАЛ", 
+                "link": "1-компл", 
+                "posStart": 179, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "Лиги", 
+                "dom": 4, 
+                "pos": "S", 
+                "len": 4, 
+                "lemma": "ЛИГА", 
+                "link": "квазиагент", 
+                "posStart": 186, 
+                "grm": "ЖЕН РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "чемпионов", 
+                "dom": 5, 
+                "pos": "S", 
+                "len": 9, 
+                "lemma": "ЧЕМПИОН", 
+                "link": "квазиагент", 
+                "posStart": 191, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "2013", 
+                "dom": 8, 
+                "pos": "NUM", 
+                "len": 4, 
+                "lemma": "2013", 
+                "link": "количест", 
+                "posStart": 201, 
+                "grm": ""
+            }, 
+            {
+                "forma": "-", 
+                "dom": 6, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "-", 
+                "link": "1-компл", 
+                "posStart": 205, 
+                "grm": ""
+            }, 
+            {
+                "forma": "2014", 
+                "dom": 8, 
+                "pos": "NUM", 
+                "len": 4, 
+                "lemma": "2014", 
+                "link": "аддит", 
+                "posStart": 206, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Серхио", 
+                "dom": 6, 
+                "pos": "S", 
+                "len": 6, 
+                "lemma": "СЕРХИО", 
+                "link": "атриб", 
+                "posStart": 211, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "Рамос", 
+                "dom": 14, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "РАМОС", 
+                "link": "предик", 
+                "posStart": 218, 
+                "grm": "МУЖ ИМ ОД ЕД"
+            }, 
+            {
+                "forma": "после", 
+                "dom": 14, 
+                "pos": "PR", 
+                "len": 5, 
+                "lemma": "ПОСЛЕ", 
+                "link": "обст", 
+                "posStart": 224, 
+                "grm": ""
+            }, 
+            {
+                "forma": "матча", 
+                "dom": 12, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "МАТЧ", 
+                "link": "предл", 
+                "posStart": 230, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "дал", 
+                "dom": -1, 
+                "pos": "V", 
+                "len": 3, 
+                "lemma": "ДАВАТЬ", 
+                "link": "_root", 
+                "posStart": 236, 
+                "grm": "ПРОШ ИЗЪЯВ МУЖ СОВ ЕД"
+            }, 
+            {
+                "forma": "свой", 
+                "dom": 16, 
+                "pos": "A", 
+                "len": 4, 
+                "lemma": "СВОЙ", 
+                "link": "опред", 
+                "posStart": 240, 
+                "grm": "МУЖ ВИН НЕОД ЕД"
+            }, 
+            {
+                "forma": "комментарий", 
+                "dom": 14, 
+                "pos": "S", 
+                "len": 11, 
+                "lemma": "КОММЕНТАРИЙ", 
+                "link": "1-компл", 
+                "posStart": 245, 
+                "grm": "МУЖ ВИН НЕОД ЕД"
+            }, 
+            {
+                "forma": ".", 
+                "dom": 14, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "2-компл", 
+                "posStart": 256, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "\"", 
+                "dom": 4, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "вводн", 
+                "posStart": 264, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Это", 
+                "dom": 4, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ЭТО", 
+                "link": "предик", 
+                "posStart": 265, 
+                "grm": "СРЕД ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": "самый", 
+                "dom": 3, 
+                "pos": "A", 
+                "len": 5, 
+                "lemma": "САМЫЙ", 
+                "link": "опред", 
+                "posStart": 269, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "важный", 
+                "dom": 4, 
+                "pos": "A", 
+                "len": 6, 
+                "lemma": "ВАЖНЫЙ", 
+                "link": "опред", 
+                "posStart": 275, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "гол", 
+                "dom": -1, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ГОЛ", 
+                "link": "_root", 
+                "posStart": 282, 
+                "grm": "МУЖ ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": ",", 
+                "dom": 4, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": ",", 
+                "link": "предик", 
+                "posStart": 285, 
+                "grm": ""
+            }, 
+            {
+                "forma": "который", 
+                "dom": -1, 
+                "pos": "A", 
+                "len": 7, 
+                "lemma": "КОТОРЫЙ", 
+                "link": "ROOT", 
+                "posStart": 287, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "я", 
+                "dom": 9, 
+                "pos": "S", 
+                "len": 1, 
+                "lemma": "Я", 
+                "link": "предик", 
+                "posStart": 295, 
+                "grm": "1Л ИМ ЕД"
+            }, 
+            {
+                "forma": "когда-либо", 
+                "dom": 9, 
+                "pos": "ADV", 
+                "len": 10, 
+                "lemma": "КОГДА-ЛИБО", 
+                "link": "обст", 
+                "posStart": 297, 
+                "grm": ""
+            }, 
+            {
+                "forma": "забивал", 
+                "dom": 5, 
+                "pos": "V", 
+                "len": 7, 
+                "lemma": "ЗАБИВАТЬ", 
+                "link": "релят", 
+                "posStart": 308, 
+                "grm": "ПРОШ ИЗЪЯВ МУЖ НЕСОВ ЕД"
+            }, 
+            {
+                "forma": ".", 
+                "dom": 9, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "1-компл", 
+                "posStart": 315, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "Это", 
+                "dom": 2, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ЭТО", 
+                "link": "предик", 
+                "posStart": 318, 
+                "grm": "СРЕД ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": "невероятное", 
+                "dom": 2, 
+                "pos": "A", 
+                "len": 11, 
+                "lemma": "НЕВЕРОЯТНЫЙ", 
+                "link": "опред", 
+                "posStart": 322, 
+                "grm": "СРЕД ИМ ЕД"
+            }, 
+            {
+                "forma": "чувство", 
+                "dom": -1, 
+                "pos": "S", 
+                "len": 7, 
+                "lemma": "ЧУВСТВО", 
+                "link": "_root", 
+                "posStart": 334, 
+                "grm": "СРЕД ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": ".", 
+                "dom": 2, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "1-компл", 
+                "posStart": 341, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "Мы", 
+                "dom": 1, 
+                "pos": "S", 
+                "len": 2, 
+                "lemma": "МЫ", 
+                "link": "предик", 
+                "posStart": 344, 
+                "grm": "1Л ИМ МН"
+            }, 
+            {
+                "forma": "продолжали", 
+                "dom": -1, 
+                "pos": "V", 
+                "len": 10, 
+                "lemma": "ПРОДОЛЖАТЬ", 
+                "link": "_root", 
+                "posStart": 347, 
+                "grm": "ПРОШ ИЗЪЯВ НЕСОВ МН"
+            }, 
+            {
+                "forma": "бороться", 
+                "dom": 1, 
+                "pos": "V", 
+                "len": 8, 
+                "lemma": "БОРОТЬСЯ", 
+                "link": "1-компл", 
+                "posStart": 358, 
+                "grm": "НЕСОВ ИНФ"
+            }, 
+            {
+                "forma": "до", 
+                "dom": 2, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ДО", 
+                "link": "2-компл", 
+                "posStart": 367, 
+                "grm": ""
+            }, 
+            {
+                "forma": "конца", 
+                "dom": 3, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "КОНЕЦ", 
+                "link": "предл", 
+                "posStart": 370, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "ради", 
+                "dom": 9, 
+                "pos": "PR", 
+                "len": 4, 
+                "lemma": "РАДИ", 
+                "link": "обст", 
+                "posStart": 376, 
+                "grm": ""
+            }, 
+            {
+                "forma": "своих", 
+                "dom": 7, 
+                "pos": "A", 
+                "len": 5, 
+                "lemma": "СВОЙ", 
+                "link": "опред", 
+                "posStart": 381, 
+                "grm": "РОД МН"
+            }, 
+            {
+                "forma": "фанатов", 
+                "dom": 5, 
+                "pos": "S", 
+                "len": 7, 
+                "lemma": "ФАНАТ", 
+                "link": "предл", 
+                "posStart": 387, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "\",-", 
+                "dom": 9, 
+                "pos": "MID", 
+                "len": 3, 
+                "lemma": "\",-", 
+                "link": "композ", 
+                "posStart": "", 
+                "grm": ""
+            }, 
+            {
+                "forma": "цитирует", 
+                "dom": 1, 
+                "pos": "V", 
+                "len": 8, 
+                "lemma": "ЦИТИРОВАТЬ", 
+                "link": "сент-соч", 
+                "posStart": 399, 
+                "grm": "НЕПРОШ ИЗЪЯВ 3Л НЕСОВ ЕД"
+            }, 
+            {
+                "forma": "Рамоса", 
+                "dom": 9, 
+                "pos": "S", 
+                "len": 6, 
+                "lemma": "РАМОС", 
+                "link": "1-компл", 
+                "posStart": 408, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "Sky", 
+                "dom": 10, 
+                "pos": "ENG", 
+                "len": 3, 
+                "lemma": "SKY", 
+                "link": "аппоз", 
+                "posStart": 415, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Sports", 
+                "dom": 11, 
+                "pos": "ENG", 
+                "len": 6, 
+                "lemma": "SPORTS", 
+                "link": "аппоз", 
+                "posStart": 419, 
+                "grm": ""
+            }, 
+            {
+                "forma": ".", 
+                "dom": 9, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "предик", 
+                "posStart": 425, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "\"", 
+                "dom": 4, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "обст", 
+                "posStart": 432, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Это", 
+                "dom": 4, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ЭТО", 
+                "link": "предик", 
+                "posStart": 433, 
+                "grm": "СРЕД ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": "не", 
+                "dom": 3, 
+                "pos": "PART", 
+                "len": 2, 
+                "lemma": "НЕ", 
+                "link": "огранич", 
+                "posStart": 437, 
+                "grm": ""
+            }, 
+            {
+                "forma": "мой", 
+                "dom": 4, 
+                "pos": "A", 
+                "len": 3, 
+                "lemma": "МОЙ", 
+                "link": "опред", 
+                "posStart": 440, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "гол", 
+                "dom": -1, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ГОЛ", 
+                "link": "_root", 
+                "posStart": 444, 
+                "grm": "МУЖ ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": ",", 
+                "dom": 4, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": ",", 
+                "link": "вводн", 
+                "posStart": 447, 
+                "grm": ""
+            }, 
+            {
+                "forma": "а", 
+                "dom": 4, 
+                "pos": "CONJ", 
+                "len": 1, 
+                "lemma": "А", 
+                "link": "сент-соч", 
+                "posStart": 449, 
+                "grm": ""
+            }, 
+            {
+                "forma": "один", 
+                "dom": 14, 
+                "pos": "A", 
+                "len": 4, 
+                "lemma": "ОДИН", 
+                "link": "предик", 
+                "posStart": 451, 
+                "grm": "МУЖ ИМ ЕД"
+            }, 
+            {
+                "forma": "из", 
+                "dom": 7, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ИЗ", 
+                "link": "электив", 
+                "posStart": 456, 
+                "grm": ""
+            }, 
+            {
+                "forma": "многочисленных", 
+                "dom": 10, 
+                "pos": "A", 
+                "len": 14, 
+                "lemma": "МНОГОЧИСЛЕННЫЙ", 
+                "link": "опред", 
+                "posStart": 459, 
+                "grm": "РОД МН"
+            }, 
+            {
+                "forma": "голов", 
+                "dom": 8, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "ГОЛОВА", 
+                "link": "предл", 
+                "posStart": 474, 
+                "grm": "ЖЕН РОД НЕОД МН"
+            }, 
+            {
+                "forma": "болельщиков", 
+                "dom": 10, 
+                "pos": "S", 
+                "len": 11, 
+                "lemma": "БОЛЕЛЬЩИК", 
+                "link": "квазиагент", 
+                "posStart": 480, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 10, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "атриб", 
+                "posStart": 492, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Реала", 
+                "dom": 12, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "РЕАЛ", 
+                "link": "квазиагент", 
+                "posStart": 493, 
+                "grm": "МУЖ РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 6, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "соч-союзн", 
+                "posStart": 498, 
+                "grm": ""
+            }, 
+            {
+                "forma": ".", 
+                "dom": 14, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "обст", 
+                "posStart": 499, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "Фанаты", 
+                "dom": 5, 
+                "pos": "S", 
+                "len": 6, 
+                "lemma": "ФАНАТ", 
+                "link": "предик", 
+                "posStart": 502, 
+                "grm": "МУЖ ИМ ОД МН"
+            }, 
+            {
+                "forma": "и", 
+                "dom": 0, 
+                "pos": "CONJ", 
+                "len": 1, 
+                "lemma": "И", 
+                "link": "сочин", 
+                "posStart": 509, 
+                "grm": ""
+            }, 
+            {
+                "forma": "вся", 
+                "dom": 4, 
+                "pos": "A", 
+                "len": 3, 
+                "lemma": "ВЕСЬ", 
+                "link": "опред", 
+                "posStart": 511, 
+                "grm": "ЖЕН ИМ ЕД"
+            }, 
+            {
+                "forma": "моя", 
+                "dom": 4, 
+                "pos": "A", 
+                "len": 3, 
+                "lemma": "МОЙ", 
+                "link": "опред", 
+                "posStart": 515, 
+                "grm": "ЖЕН ИМ ЕД"
+            }, 
+            {
+                "forma": "семья", 
+                "dom": 1, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "СЕМЬЯ", 
+                "link": "соч-союзн", 
+                "posStart": 519, 
+                "grm": "ЖЕН ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": "до", 
+                "dom": -1, 
+                "pos": "PR", 
+                "len": 2, 
+                "lemma": "ДО", 
+                "link": "_root", 
+                "posStart": 525, 
+                "grm": ""
+            }, 
+            {
+                "forma": "последнего", 
+                "dom": 5, 
+                "pos": "A", 
+                "len": 10, 
+                "lemma": "ПОСЛЕДНИЙ", 
+                "link": "предл", 
+                "posStart": 528, 
+                "grm": "МУЖ РОД ЕД"
+            }, 
+            {
+                "forma": "поддерживали", 
+                "dom": 5, 
+                "pos": "V", 
+                "len": 12, 
+                "lemma": "ПОДДЕРЖИВАТЬ", 
+                "link": "сент-соч", 
+                "posStart": 539, 
+                "grm": "ПРОШ ИЗЪЯВ НЕСОВ МН"
+            }, 
+            {
+                "forma": "нас", 
+                "dom": 7, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "МЫ", 
+                "link": "1-компл", 
+                "posStart": 552, 
+                "grm": "1Л ВИН МН"
+            }, 
+            {
+                "forma": ".", 
+                "dom": 7, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "2-компл", 
+                "posStart": 555, 
+                "grm": ""
+            }
+        ], 
+        [
+            {
+                "forma": "\"", 
+                "dom": 3, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "1-компл", 
+                "posStart": 558, 
+                "grm": ""
+            }, 
+            {
+                "forma": "Реал", 
+                "dom": 3, 
+                "pos": "S", 
+                "len": 4, 
+                "lemma": "РЕАЛ", 
+                "link": "предик", 
+                "posStart": 559, 
+                "grm": "МУЖ ИМ НЕОД ЕД"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 3, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "1-компл", 
+                "posStart": 563, 
+                "grm": ""
+            }, 
+            {
+                "forma": "заслужил", 
+                "dom": -1, 
+                "pos": "V", 
+                "len": 8, 
+                "lemma": "ЗАСЛУЖИВАТЬ", 
+                "link": "_root", 
+                "posStart": 565, 
+                "grm": "ПРОШ ИЗЪЯВ МУЖ СОВ ЕД"
+            }, 
+            {
+                "forma": "кубок", 
+                "dom": 3, 
+                "pos": "S", 
+                "len": 5, 
+                "lemma": "КУБОК", 
+                "link": "предик", 
+                "posStart": 574, 
+                "grm": "МУЖ ВИН НЕОД ЕД"
+            }, 
+            {
+                "forma": "Лиги", 
+                "dom": 4, 
+                "pos": "S", 
+                "len": 4, 
+                "lemma": "ЛИГА", 
+                "link": "квазиагент", 
+                "posStart": 580, 
+                "grm": "ЖЕН РОД НЕОД ЕД"
+            }, 
+            {
+                "forma": "чемпионов", 
+                "dom": 5, 
+                "pos": "S", 
+                "len": 9, 
+                "lemma": "ЧЕМПИОН", 
+                "link": "квазиагент", 
+                "posStart": 585, 
+                "grm": "МУЖ РОД ОД МН"
+            }, 
+            {
+                "forma": "после", 
+                "dom": 10, 
+                "pos": "PR", 
+                "len": 5, 
+                "lemma": "ПОСЛЕ", 
+                "link": "обст", 
+                "posStart": 595, 
+                "grm": ""
+            }, 
+            {
+                "forma": "стольких", 
+                "dom": 9, 
+                "pos": "A", 
+                "len": 8, 
+                "lemma": "СТОЛЬКИМ", 
+                "link": "опред", 
+                "posStart": 601, 
+                "grm": "РОД МН"
+            }, 
+            {
+                "forma": "лет", 
+                "dom": 7, 
+                "pos": "S", 
+                "len": 3, 
+                "lemma": "ГОД", 
+                "link": "предл", 
+                "posStart": 610, 
+                "grm": "МУЖ РОД НЕОД МН"
+            }, 
+            {
+                "forma": "\"", 
+                "dom": 3, 
+                "pos": "MID", 
+                "len": 1, 
+                "lemma": "\"", 
+                "link": "сент-соч", 
+                "posStart": 613, 
+                "grm": ""
+            }, 
+            {
+                "forma": ".", 
+                "dom": 10, 
+                "pos": "MAD", 
+                "len": 1, 
+                "lemma": ".", 
+                "link": "предик", 
+                "posStart": 614, 
+                "grm": ""
+            }
+        ]
+    ]
+}
