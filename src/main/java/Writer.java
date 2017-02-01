@@ -10,7 +10,7 @@ public class Writer {
 
     static void write(Entropy entropy) throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter writer = new PrintWriter("output.csv", "Cp1251");
-        writer.println("words;e_w;F;df;H;W2;W1;D4;D3;sum_rank;D1");
+        writer.println("words;e_w;F;df;H;W2;W1;D4;D3;sum_rank;D1;dw");
         for (String key : entropy.hw.keySet()) {
             writer.print(key);
             writer.print(';');
@@ -31,8 +31,10 @@ public class Writer {
             writer.print(0);
             writer.print(';');//D3
             writer.print(0);
-            writer.print(';');//sun_rank
-            writer.println(0);//D1
+            writer.print(';');//sun_ran
+            writer.print(0);//D1
+            writer.print(';');
+            writer.println(entropy.dw.get(key));//dw            writer.print(';');//sun_rank
         }
         writer.close();
         System.out.println("output.csv saved");

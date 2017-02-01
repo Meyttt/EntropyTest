@@ -15,16 +15,13 @@ public class Entropy {
     ArrayList<Ramos> ramoses = new ArrayList<>();
     HashMap<String, Double> hw = new HashMap<>();
     int allLength = 0;
-
+    //осторожно начало бреда
     HashMap<String, Double> w1s = new HashMap<>();
     HashMap<String, Double> w2s = new HashMap<>();
     HashMap<String, Double> dfe1 = new HashMap<>();
     HashMap<String, Double> dfe2 = new HashMap<>();
     HashMap<String, Double> dw = new HashMap<>();
-
-
-
-
+    //конец
 
     public Ramos readRamos(String filename) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
@@ -55,7 +52,7 @@ public class Entropy {
         mapsCalculation();
     }
 
-    public void getHW() {
+    public void getHW() { //(4)  Информационная энтропия
         Set<String> allKeys = allReferencies.keySet();
         for (String word : allKeys) {
             double hw = 0;
@@ -70,6 +67,25 @@ public class Entropy {
         }
 
     }
+
+
+    //осторожно начало бреда
+    public void getDW() { //(1) Дивергенция Кульбака — Лейблера
+        Set<String> allKeys = allReferencies.keySet();
+        for (String word : allKeys) {
+            double dw = 0;
+            for (Ramos ramos : ramoses) {
+                if (ramos.wordCount.containsKey(word)) {
+                    double pdoc = (double) ramos.wordCount.get(word) / (double) allReferencies.get(word);
+                    double pnd = (double) ramos.length / (double) allLength;
+                    dw += pdoc * (Math.log10(pdoc / pnd));
+                }
+            }
+            this.dw.put(word, dw);
+        }
+    }
+    //конец
+
 
     public int mapsCalculation() {
         this.allReferencies.clear();
