@@ -1,4 +1,3 @@
-
 import com.fasterxml.jackson.annotation.JsonView;
 
 /**
@@ -22,7 +21,9 @@ public class Word {
     @JsonView(Views.Normal.class)
     private String grm;
 
-    String getLem(){return  this.lemma;}
+    String getLem() {
+        return this.lemma;
+    }
 
     @Override
     public String toString() {
