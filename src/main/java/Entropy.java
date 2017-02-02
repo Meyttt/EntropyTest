@@ -112,7 +112,7 @@ public class Entropy {
                     double probWD=Math.pow(2,(double)-1*((double)Math.log10(prob1)/(double)Math.log10(2)));
                     double probNorm = probWD/probWX;
                     ramos.probnorms.put(word,probNorm);
-                    Wrisk2wd = ((allReferencies.get(word))*((double)-1*(Math.log10(probNorm)/Math.log10(2))))/(documentCounter.get(word)*ramos.wordCount.get(word));
+                    Wrisk2wd = ((allReferencies.get(word))*((double)-1*(Math.log10(probNorm)/Math.log10(2))))/(documentCounter.get(word)*(ramos.wordCount.get(word)+1));
                     Wrisk1wd = ((double)-1*(Math.log10(probNorm)/Math.log10(2))/(ramos.wordCount.get(word)+1));
                     W2w+=Wrisk2wd;
                     W1w+=Wrisk1wd;
