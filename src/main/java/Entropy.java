@@ -84,7 +84,44 @@ public class Entropy {
             this.dw.put(word, dw);
         }
     }
-    //конец
+    //<не> конец
+
+    public void getWW(){
+        double p = (double) 1 / ramoses.size();
+        double q = (double) (ramoses.size() - 1) / ramoses.size();
+        Set<String> allKeys = allReferencies.keySet();
+        for(String word: allKeys){
+            double probWX = 0;
+            for(Ramos ramos:ramoses){
+                if(ramos.wordCount.containsKey(word)){
+                    double prob1=((double)allReferencies.get(word)/(double)ramos.wordCount.get(word))*
+                            Math.pow(p,ramos.wordCount.get(word))*Math.pow(q,(allReferencies.get(word)-ramos.wordCount.get(word)));
+                    double probWD=Math.pow(2,(double)-1*((double)Math.log10(prob1)/(double)Math.log10(2)));
+                    probWX+=probWD;
+
+                }
+            }
+            double Wrisk2wd=0;
+            double Wrisk1wd=0;
+            Double W1w= Double.valueOf(0);
+            Double W2w= Double.valueOf(0);
+            for(Ramos ramos:ramoses){
+                if(ramos.wordCount.containsKey(word)){
+                    double prob1=((double)allReferencies.get(word)/(double)ramos.wordCount.get(word))*
+                            Math.pow(p,ramos.wordCount.get(word))*Math.pow(q,(allReferencies.get(word)-ramos.wordCount.get(word)));
+                    double probWD=Math.pow(2,(double)-1*((double)Math.log10(prob1)/(double)Math.log10(2)));
+                    double probNorm = probWD/probWX;
+                    ramos.probnorms.put(word,probNorm);
+                    Wrisk2wd = ((allReferencies.get(word))*((double)-1*(Math.log10(probNorm)/Math.log10(2))))/(documentCounter.get(word)*ramos.wordCount.get(word));
+                    Wrisk1wd = ((double)-1*(Math.log10(probNorm)/Math.log10(2))/(ramos.wordCount.get(word)+1));
+                    W2w+=Wrisk2wd;
+                    W1w+=Wrisk1wd;
+                }
+            }
+            w1s.put(word,W1w);
+            w2s.put(word,W2w);
+        }
+    }
 
 
     public int mapsCalculation() {

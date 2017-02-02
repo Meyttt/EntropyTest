@@ -17,6 +17,7 @@ public class Main {
         entropy.allPreparing();
         entropy.getHW();
         entropy.getDW();
+        entropy.getWW();
         Writer.write(entropy);
         System.out.println(false);
 

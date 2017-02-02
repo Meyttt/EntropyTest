@@ -15,6 +15,7 @@ public class Ramos {
     private String text;
     @JsonView(Views.Normal.class)
     private ArrayList<ArrayList<Word>> sentences = new ArrayList<>();
+    HashMap<String, Double> probnorms= new HashMap<>();
 
     public Ramos() {
     }
