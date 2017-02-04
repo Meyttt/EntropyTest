@@ -8,6 +8,13 @@ import java.io.UnsupportedEncodingException;
 public class Writer {
 
 
+    /**
+     * Статичный метод для запичи в "output.csv"
+     * Для правильной записи всех параметров неодходимые словари должны быть добавленны сюда
+     * @param entropy
+     * @throws FileNotFoundException
+     * @throws UnsupportedEncodingException
+     */
     static void write(Entropy entropy) throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter writer = new PrintWriter("output.csv", "Cp1251");
         writer.println("words;e_w;F;df;H;W2;W1;D4;D3;sum_rank;D1;dw");

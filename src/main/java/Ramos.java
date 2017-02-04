@@ -7,7 +7,10 @@ import java.util.Set;
 
 /**
  * Created by svkreml on 01.02.2017.
+ *
+ * Класс для хранения документа.
  */
+
 public class Ramos {
     public Integer length = 0;
     HashMap<String, Integer> wordCount = new HashMap<>();
@@ -20,6 +23,10 @@ public class Ramos {
     public Ramos() {
     }
 
+    /**
+     * Используется для подсчёта слов без слов из Set<String> stopWords и длинной 3 и более букв
+     * @param stopWords
+     */
     public void setWordCount(Set<String> stopWords) {
         for (ArrayList<Word> sentence : sentences) {
             for (Word word : sentence) {
@@ -38,6 +45,11 @@ public class Ramos {
         }
     }
 
+    /**
+     * ???
+     * @param frequentWords --
+     *
+     */
     public void removeRareWords(Set<String> frequentWords) {
         System.out.println(this.wordCount.keySet().size());
         Iterator iterator = this.wordCount.keySet().iterator();

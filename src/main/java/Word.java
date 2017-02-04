@@ -2,7 +2,22 @@ import com.fasterxml.jackson.annotation.JsonView;
 
 /**
  * Created by svkreml on 01.02.2017.
+ *
+ *
+ *
+ *       {
+             "forma": "были",
+             "dom": -1,
+             "pos": "V",
+             "len": 4,
+             "lemma": "БЫТЬ",
+             "link": "_root",
+             "posStart": 11,
+             "grm": "ПРОШ ИЗЪЯВ НЕСОВ МН"
+            },
+ *
  */
+
 public class Word {
     @JsonView(Views.Normal.class)
     private String forma;
