@@ -20,6 +20,7 @@ public class Main {
         entropy.getDW();
         entropy.getWW();
         entropy.getBest(entropy.getSumRang(),100);
+        entropy.pairsMapsCalculation();
         Writer.write(entropy);
         System.out.println(false);
 

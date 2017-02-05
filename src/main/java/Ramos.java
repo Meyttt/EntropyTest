@@ -19,6 +19,7 @@ public class Ramos {
     @JsonView(Views.Normal.class)
     protected ArrayList<ArrayList<Word>> sentences = new ArrayList<>();
     HashMap<String, Double> probnorms= new HashMap<>();
+    HashMap<Pair,Integer> pairCounter = new HashMap<>();
 
     public Ramos() {
     }

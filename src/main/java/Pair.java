@@ -17,4 +17,12 @@ public class Pair {
         }
         return false;
     }
+
+    public boolean equals(Object o){
+        if ((((Pair)o).first.equalsIgnoreCase(this.first)&& ((Pair)o).second.equalsIgnoreCase(this.second))||
+                (((Pair)o).first.equalsIgnoreCase(this.second)&& ((Pair)o).second.equalsIgnoreCase(this.first))){
+            return true;
+        }
+        return false;
+    }
 }

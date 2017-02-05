@@ -292,18 +292,46 @@ public class Entropy {
         }
         return allLength;
     }
-    public void paresMapsCalculation(){
+    public void pairsMapsCalculation(){
         Set<String> sentenceText = new HashSet<>();
-        Set<String> popularInDoc = new HashSet<>();
         for(Ramos ramos:ramoses){
             for(ArrayList<Word> sentence:ramos.sentences){
                 for(Word word:sentence){
                     sentenceText.add(word.getLem());
                 }
-            sentenceText.retainAll(popularWords);
+                sentenceText.retainAll(popularWords);
+                Pair pair;
+                ArrayList<String> wordList = new ArrayList<>(sentenceText);
+                for(int i=0; i<wordList.size()-1;i++){
+                    for(int j=i+1;j<wordList.size();j++){
+                        pair = new Pair(wordList.get(i),wordList.get(j));
+                        allPairs.add(pair);
+                        if(ramos.pairCounter.containsKey(pair)){
+                            ramos.pairCounter.put(pair,ramos.pairCounter.get(pair)+1);
+                        }else {
+                            ramos.pairCounter.put(pair,1);
+                        }
+                        if(allPairReferencies.containsKey(pair)){
+                            allPairReferencies.put(pair,allPairReferencies.get(pair)+1);
+                        }else{
+                            allPairReferencies.put(pair,1);
+                        }
+                    }
+                }
+                sentenceText.clear();
+            }
+            for(Pair pair:allPairs){
+                if(documentPairCounter.containsKey(pair)){
+                    documentPairCounter.put(pair,documentPairCounter.get(pair)+1);
+                }else{
+                    documentPairCounter.put(pair,1);
+                }
             }
         }
+        System.out.println(allPairs.size());
     }
+    //// TODO: 05.02.2017 А как обрабатывается ситуация, если в предложении слова встречается дважды?
+
 
 
 
