@@ -328,7 +328,12 @@ public class Entropy {
                 }
             }
         }
-        System.out.println(allPairs.size());
+        Pair pair = (Pair)allPairs.toArray()[1];
+        for(Pair pair1:allPairs){
+            if(pair1.equals(pair)){
+                System.out.println("WTF?");
+            }
+        }
     }
     //// TODO: 05.02.2017 А как обрабатывается ситуация, если в предложении слова встречается дважды?
 
