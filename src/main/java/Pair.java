@@ -25,4 +25,7 @@ public class Pair {
         }
         return false;
     }
+    public int hashCode(){
+        return this.first.hashCode()+this.second.hashCode();
+    }
 }

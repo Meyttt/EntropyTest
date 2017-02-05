@@ -328,10 +328,15 @@ public class Entropy {
                 }
             }
         }
-        Pair pair = (Pair)allPairs.toArray()[1];
-        for(Pair pair1:allPairs){
-            if(pair1.equals(pair)){
-                System.out.println("WTF?");
+        for(Pair pair:allPairs) {
+            int z = 0;
+            for (Pair pair1 : allPairs) {
+                if (pair1.equals(pair)) {
+                    z++;
+                }
+            }
+            if (z>1){
+                System.out.println("WTF "+z);
             }
         }
     }
