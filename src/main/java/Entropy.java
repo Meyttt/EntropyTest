@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by Александра on 21.01.2017.
@@ -22,6 +23,12 @@ public class Entropy {
     HashMap<String, Double> dfe1 = new HashMap<>();
     HashMap<String, Double> dfe2 = new HashMap<>();
     HashMap<String, Double> dw = new HashMap<>();
+
+    Set<String> topWords = new HashSet<>();
+
+    Set<Pair> allPairs = new HashSet<>();
+    HashMap<Pair, Integer> allPairReferencies = new HashMap<>();
+    HashMap<Pair, Integer> documentPairCounter = new HashMap<>();
     //конец
 
     /**
@@ -61,11 +68,7 @@ public class Entropy {
     public void allPreparing() {
         allLength = mapsCalculation();
         Set<String> allFirstWords = documentCounter.keySet();
-        for (String word : allFirstWords) {
-            if (documentCounter.get(word) >= 3) {
-                popularWords.add(word);
-            }
-        }
+        popularWords.addAll(allFirstWords.stream().filter(word -> documentCounter.get(word) >= 3).collect(Collectors.toList()));
         for (Ramos ramos : ramoses) {
             ramos.removeRareWords(popularWords);
         }
@@ -199,7 +202,7 @@ public class Entropy {
      * Пока не использован
      * @param hashMap<String, Double>
      */
-    private void getRang(HashMap<String, Double> hashMap) {
+    private LinkedHashMap<String,Integer> getRang(HashMap<String, Double> hashMap) {
         List<Map.Entry<String, Double>> hList = new ArrayList<Map.Entry<String, Double>>(hashMap.entrySet());
         int j = 0;
         //Создание сортированного списка пар ключ-значение из исходного словаря для последовательной обработки
@@ -213,19 +216,44 @@ public class Entropy {
         int number = 1;
         LinkedHashMap<String,Integer> linkedHashMap = new LinkedHashMap<>();
         for (Map.Entry<String, Double> pare : hList) {
-            if( pare.getValue()!=current){
+            if( !(pare.getValue()>=current-0.00001||pare.getValue()<=current+0.00001)){
                 number++;
             }
             linkedHashMap.put(pare.getKey(),number);
         }
+        return linkedHashMap;
+    }
+    protected void getBest(HashMap<String,Integer> sumRang, int n) {
+        List<Map.Entry<String, Integer>> hList = new ArrayList<Map.Entry<String, Integer>>(sumRang.entrySet());
+        hList.sort(new Comparator<Map.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                return Integer.compare(o1.getValue(), o2.getValue());
+            }
+        });
+        for (int i=0;i<n;i++){
+            topWords.add(hList.get(i).getKey());
+        }
+
     }
 
     /**
      *
-     * @return null
+     * @return словарь с ключем - элементом и значением - суммарным рангом.
      */
     public HashMap<String,Integer> getSumRang(){
-        return null;
+        LinkedHashMap<String,Integer> Hrang = getRang(hw);
+        LinkedHashMap<String,Integer> W1rang = getRang(w1s);
+        LinkedHashMap<String,Integer> W2Rang = getRang(w2s);
+        LinkedHashMap<String,Integer> DF1rang = getRang(dfe1);
+        LinkedHashMap<String,Integer> DF2rang = getRang(dfe2);
+        Set<String> allKeys=Hrang.keySet();
+        HashMap<String,Integer> sumRang = new HashMap<>();
+        for(String key:allKeys){
+            sumRang.put(key,Hrang.get(key)*7+W1rang.get(key)+W2Rang.get(key)+DF1rang.get(key)+DF2rang.get(key));
+        }
+        return sumRang;
+
     }
 
     /**
@@ -264,6 +292,19 @@ public class Entropy {
         }
         return allLength;
     }
+    public void paresMapsCalculation(){
+        Set<String> sentenceText = new HashSet<>();
+        Set<String> popularInDoc = new HashSet<>();
+        for(Ramos ramos:ramoses){
+            for(ArrayList<Word> sentence:ramos.sentences){
+                for(Word word:sentence){
+                    sentenceText.add(word.getLem());
+                }
+            sentenceText.retainAll(popularWords);
+            }
+        }
+    }
+
 
 
 }

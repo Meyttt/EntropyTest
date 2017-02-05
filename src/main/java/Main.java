@@ -19,6 +19,7 @@ public class Main {
         entropy.getHW();
         entropy.getDW();
         entropy.getWW();
+        entropy.getBest(entropy.getSumRang(),100);
         Writer.write(entropy);
         System.out.println(false);
 

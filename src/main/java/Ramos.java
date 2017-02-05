@@ -17,7 +17,7 @@ public class Ramos {
     @JsonView(Views.Normal.class)
     private String text;
     @JsonView(Views.Normal.class)
-    private ArrayList<ArrayList<Word>> sentences = new ArrayList<>();
+    protected ArrayList<ArrayList<Word>> sentences = new ArrayList<>();
     HashMap<String, Double> probnorms= new HashMap<>();
 
     public Ramos() {
@@ -70,5 +70,6 @@ public class Ramos {
         }
         return false;
     }
+
 
 }
