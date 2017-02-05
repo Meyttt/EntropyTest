@@ -28,4 +28,7 @@ public class Pair {
     public int hashCode(){
         return this.first.hashCode()+this.second.hashCode();
     }
+    public String toString(){
+        return first+" "+second;
+    }
 }

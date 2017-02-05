@@ -29,6 +29,14 @@ public class Entropy {
     Set<Pair> allPairs = new HashSet<>();
     HashMap<Pair, Integer> allPairReferencies = new HashMap<>();
     HashMap<Pair, Integer> documentPairCounter = new HashMap<>();
+
+    HashMap<Pair, Double> w1sPair = new HashMap<>();
+    HashMap<Pair, Double> w2sPair = new HashMap<>();
+    HashMap<Pair, Double> dfe1Pair = new HashMap<>();
+    HashMap<Pair, Double> dfe2Pair = new HashMap<>();
+    HashMap<Pair, Double> dwPair = new HashMap<>();
+    HashMap<Pair, Double> hwPair = new HashMap<>();
+
     //конец
 
     /**
@@ -320,7 +328,7 @@ public class Entropy {
                 }
                 sentenceText.clear();
             }
-            for(Pair pair:allPairs){
+            for(Pair pair:ramos.pairCounter.keySet()){
                 if(documentPairCounter.containsKey(pair)){
                     documentPairCounter.put(pair,documentPairCounter.get(pair)+1);
                 }else{
@@ -339,7 +347,100 @@ public class Entropy {
                 System.out.println("WTF "+z);
             }
         }
+//        int i=0;
+//        for(Pair pair: allPairs){
+//            if(documentPairCounter.get(pair)>1){
+//                i++;
+//            }
+//        }
+//        System.out.println("More then 3 docs count: "+i);
     }
+
+    public void getPairHW() {
+        for (Pair pair : allPairs) {
+            double hw = 0;
+            for (Ramos ramos : ramoses) {
+                if (ramos.pairCounter.containsKey(pair)) {
+                    double pdoc = (double) ramos.pairCounter.get(pair) /
+                            (double) allPairReferencies.get(pair);
+                    hw += pdoc * (Math.log10(1 / pdoc));
+                }
+            }
+            hwPair.put(pair,hw);
+        }
+
+    }
+    //todo: Как считать общую длину? По числу популярных словосочетаний или всех?
+//    public void getPairDW() {
+//        for (Pair pair:allPairs) {
+//            double dw = 0;
+//            for (Ramos ramos : ramoses) {
+//                if (ramos.pairCounter.containsKey(pair)) {
+//                    double pdoc = (double) ramos.pairCounter.get(pair)/ (double) allPairReferencies.get(pair);
+//                    double pnd = (double) ramos.length / (double) allLength;
+//                    dw += pdoc * (Math.log10(pdoc / pnd));
+//                }
+//            }
+//            this.dw.put(word, dw);
+//        }
+//    }
+    //<не> конец
+
+    public void getPairWW(){
+        double p = (double) 1 / (double)ramoses.size();
+        double q = (double) ((double)ramoses.size() - (double)1) / (double)ramoses.size();
+        for(Pair pair:allPairs){
+            double probWX = 0;
+            for(Ramos ramos:ramoses){
+                if(ramos.pairCounter.containsKey(pair)){
+                    double prob1=((double)allPairReferencies.get(pair)/(double)ramos.pairCounter.get(pair))*
+                            Math.pow(p,(double)ramos.pairCounter.get(pair))*Math.pow(q,((double)allPairReferencies.get(pair)-(double)ramos.pairCounter.get(pair)));
+                    double probWD=Math.pow((double)2,(double)-1*((double)Math.log(prob1)/(double)Math.log(2)));
+                    probWX+=probWD;
+
+                }
+            }
+            double Wrisk2wd=0;
+            double Wrisk1wd=0;
+            Double W1w= Double.valueOf(0);
+            Double W2w= Double.valueOf(0);
+            for(Ramos ramos:ramoses){
+                if(ramos.pairCounter.containsKey(pair)){
+                    double prob1=((double)allPairReferencies.get(pair)/(double)ramos.pairCounter.get(pair))*
+                            Math.pow(p,(double)ramos.pairCounter.get(pair))*Math.pow(q,(double)(allPairReferencies.get(pair)-ramos.pairCounter.get(pair)));
+                    double probWD=Math.pow((double)2,(double)-1*((double)Math.log(prob1)/(double)Math.log(2)));
+                    double probNorm = probWD/probWX;
+                    ramos.probnormsPair.put(pair,probNorm);
+                    Wrisk2wd = ((allPairReferencies.get(pair))*((double)-1*(Math.log(probNorm)/(double)Math.log(2))))/(documentPairCounter.get(pair)*(ramos.pairCounter.get(pair)+1));
+                    Wrisk1wd = ((double)-1*(Math.log10(probNorm)/Math.log10(2))/((double)ramos.pairCounter.get(pair)+(double)1));
+                    W2w+=Wrisk2wd;
+                    W1w+=Wrisk1wd;
+
+                }
+            }
+            w1sPair.put(pair,W1w);
+            w2sPair.put(pair,W2w);
+            double Dfe1 = 0;
+            double Dfe2 = 0;
+            double pdoc, Wrisk2norm;
+            for(Ramos ramos:ramoses){
+                if(ramos.pairCounter.containsKey(pair)){
+                    pdoc=((double)ramos.pairCounter.get(pair)/(double)allPairReferencies.get(pair));
+                    Dfe1+=pdoc*(Math.log10(pdoc/ramos.probnormsPair.get(pair))/Math.log10(2));
+                    Wrisk2wd = ((allPairReferencies.get(pair))*((double)-1*(Math.log(ramos.probnormsPair.get(pair))/(double)Math.log(2))))/(documentPairCounter.get(pair)*(ramos.pairCounter.get(pair)+1));
+                    Wrisk2norm= Wrisk2wd/w2sPair.get(pair);
+                    Dfe2+=pdoc*(Math.log10(pdoc/Wrisk2norm)/Math.log10(2));
+                }
+            }
+            dfe1Pair.put(pair,Dfe1);
+            dfe2Pair.put(pair,Dfe2);
+
+        }
+
+    }
+
+
+
     //// TODO: 05.02.2017 А как обрабатывается ситуация, если в предложении слова встречается дважды?
 
 
